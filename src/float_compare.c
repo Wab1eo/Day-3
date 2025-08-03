@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 double fun();
 
@@ -7,7 +7,8 @@ int main() {
   double res = fun();
 
   // CHANGE THIS IF - AI
-  if (res < 0.000001) printf("OK!");
+  if (res < 0.000001)
+    printf("OK!");
 
   return 0;
 }
