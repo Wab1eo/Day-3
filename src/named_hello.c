@@ -1,10 +1,9 @@
 #include <stdio.h>
 int main() {
-  int name = 0;
-  printf("Введите число в качестве имени:");
-  while (scanf("%d", &name) != 1) {
-    printf("\nОшибка ввода. Попробуйте снова:");
-  }
-  printf("Hello, %d!", name);
-  return 0
+  char name[50];
+  
+  printf("Type name: ");
+  scanf("%49s", name);
+  printf("Hello, %s!\n", name);
+  return 0;
 }
